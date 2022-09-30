@@ -1,7 +1,6 @@
-**第一个**
-   * [首页](zh-cn/)
-   * [指南](zh-cn/guide)
-   * [第一级](first.md)
+* SDK API
 
-**第二个**
-   * [第二](sencond/)
+    * [登录功能](user/)
+    * [获取用户信息](user/getuserinfo)
+
+* 其他接口
