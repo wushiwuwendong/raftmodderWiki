@@ -1,0 +1,14 @@
+{
+  "name": "docwiki",
+  "version": "1.0.0",
+  "description": "raftmodder wiki",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiaodong",
+  "license": "ISC",
+  "dependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
