@@ -1,12 +1,11 @@
 ![logo](_media/icon.svg)
 
-# docsify <small>3.5</small>
+# RaftModder <small>1.0</small>
 
-> 一个神奇的文档网站生成器。
+> Raft魔改的开始
 
-- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+- 详尽
+- 易懂
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](hello.md)
+
+[Get Started](guid.md)
