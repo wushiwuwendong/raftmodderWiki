@@ -18,12 +18,12 @@
     - [访问修改存储库](/general/network/protocol-model.md)
 
 
-- 客户端 - api
+- 客户端api
     - [RAPI](/general/network/protocol-model.md)
     - [模组事件](/general/network/protocol-model.md)
 
 
-- 客户端 - 代码实例
+- 客户端代码实例
     - [读取私有变量](/general/network/protocol-model.md)
     - [修改私有变量](/general/network/protocol-model.md)
     - [添加私有变量](/general/network/protocol-model.md)
