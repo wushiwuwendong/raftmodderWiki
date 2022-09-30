@@ -1,3 +1,4 @@
+- [欢迎来到Raftmodder](guid.mc)
 - 教程
   - [如何安装 RaftModLoader](/general/algorithm/README.md)
    - [故障排除](/general/algorithm/data-structures/stack/README.zh-CN.md)
