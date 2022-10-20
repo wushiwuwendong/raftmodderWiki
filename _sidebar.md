@@ -10,7 +10,7 @@
     - [如何运行多个 raft 实例](/tutorials/how-to-run-multiple-raft-instances/README.md)
 
 - 创建mod教程
-    - [如何创建一个模组项目](/general/network/protocol-model.md)
+    - [如何创建一个模组项目](/modding-tutorials/how-to-create-a-mod-project/README.md)
      - [modinfo.json 文件](/general/network/protocol-model.md)
     - [如何创建 AssetBundle](/general/network/protocol-model.md)
     - [如何创建控制台命令](/general/network/protocol-model.md)
