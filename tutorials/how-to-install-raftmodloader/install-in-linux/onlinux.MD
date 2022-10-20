@@ -6,10 +6,10 @@
 编写本指南的人喜欢Linux、免费和开源的东西，他使用 Bash 代替 PowerShell，使用 Clangd+Vim 代替 Visual Studio。在安装了 Ubuntu 并在上面玩了一些其他游戏之后，他发现了一个独特的软件： [Wine](https://winehq.org/)。这使他能够运行 Raft... .
 
 继续，您需要做的第一件事是： 
-##1. 获取木筏 
+## 1. 获取木筏 
 转到您的 Windows PC，找到 Raft 安装文件夹（ 
 解释）并将其复制到您的 Linux 计算机。在我的桌面上它被放置在 ~/Desktop/Raft，因此根据您所在的位置更改路径。 
-##2.下载启动器 
+## 2.下载启动器 
 与您在 Windows 上所做的相同。进入[下载页面](https://raftmodder.mcxiaodong.top/download)，并将其放到某处（比如我放在 ~/Desktop/Raft- 我的 Raft 文件夹）。
 ![节点](./download.png) 
 ##3. 安装 Mono 和 .NET 4.6 
@@ -20,7 +20,7 @@
     WINEPREFIX="$(dirname ~/.wine)/.wine" ./setup_dxvk.sh install
 
 ![节点](./dxvk.png) 
-##5. 像在 Windows 上一样使用 RaftModLoader 
+## 5. 像在 Windows 上一样使用 RaftModLoader 
 通过 Wine 运行 *RMLLauncher:wine64 ~/Downloads/RMLLauncher.exe* 它会要求您提供 Raft 文件夹。  根据我的检查，更新很好，注入工作和 Raft 启动
 已知的问题 
 在 Alt+Tab 之后 Raft 不会响应 
