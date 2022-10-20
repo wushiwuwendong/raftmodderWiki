@@ -1,8 +1,8 @@
-#如何在 Linux 上安装 RaftModLoader 
+# 如何在 Linux 上安装 RaftModLoader 
 本教程旨在向您展示如何在其他操作系统（不是 Windows）上安装 RaftModLoader。 
 
 ---
-#如何在Linux上安装RaftModLoader 
+# 如何在Linux上安装RaftModLoader 
 编写本指南的人喜欢Linux、免费和开源的东西，他使用 Bash 代替 PowerShell，使用 Clangd+Vim 代替 Visual Studio。在安装了 Ubuntu 并在上面玩了一些其他游戏之后，他发现了一个独特的软件： [Wine](https://winehq.org/)。这使他能够运行 Raft... .
 
 继续，您需要做的第一件事是： 
@@ -15,7 +15,7 @@
 ##3. 安装 Mono 和 .NET 4.6 
 首先，如果你还没有安装 *winetricks*.  在 Ubuntu 上，它只是 *sudo apt install winetricks*. 下载 *Mono 5.0 .MSI* 并运行 *wine uninstaller*启动“添加和删除软件”对话框。  将其指向下载的安装程序并等待它完成。安装 Mono 后，您需要做另一件事：.NET 4.6。  它可以使用从终端安装 *winetricks dotnet46*. 它会警告您缺少 Windows 模块安装服务，但这不是问题。 
 ##4.（推荐）安装DXVK以获得更好的性能 
-如果您的显卡支持 Vulkan 渲染，则不应跳过此步骤。从获取一个版本，将存档解压缩到 ~/Downloads/并从终端中运行它 ~/Downloads/dxvk_x.y.zxyz 是版本的目录： 
+如果您的显卡支持 <code>Vulkan</code> 渲染，则不应跳过此步骤。从获取一个版本，将存档解压缩到 <code>~/Downloads/</code>并从终端中运行它 <code>~/Downloads/dxvk_x.y.zxyz </code>是版本的目录： 
 
     WINEPREFIX="$(dirname ~/.wine)/.wine" ./setup_dxvk.sh install
 
