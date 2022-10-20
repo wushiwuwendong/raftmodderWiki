@@ -19,8 +19,14 @@
 在模组页面上，您可以找到有关模组的所有信息。  要安装一个模组，只需按下大绿色 安装模组 按钮。
 ![jd](./installmod.png) 
 您的浏览器可能会询问您 raftmodder.mcixaodong.top 是否可以打开 Raft Mod Loader 来安装 mod。  点击 打开 允许它。  
-![jd](./installmod2.png) 
+
+
+![jd](./installmod2.png)
+
+
 ![jd](./installmod2_1.png) 
+
+
 如果单击绿色 安装模组 按钮后没有任何反应，请查看[点击此处](../)
 
 浏览器要求您确认打开 Mod 安装程序 
