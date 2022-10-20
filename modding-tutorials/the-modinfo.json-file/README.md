@@ -29,7 +29,7 @@
 ### UpdateUrl 字段： 
 ##### RaftModLoader 获取此链接以了解您的 mod 的最新可用版本是什么，如果当前安装的版本不等于此 url 返回的版本，则会说该 mod 已过时。
 ##### 我们的网站通过一个很好的自动化系统提供这项服务。  拥有 mod slug 后，可在以下链接中找到。
- <code>https://www.raftmodding.com/api/v1/mods/YOURMODSLUG/version.txt</code>
+ <code>https://www.raftmodder.mcxiaodong.top/api/v1/mods/YOURMODSLUG/version.txt</code>
 
 ### requiredByAllPlayers 字段：
 ##### 如果此字段设置为 true 并且加载了 mod，它将踢出任何尝试加入但没有相同 mod 和相同版本的玩家。如果你的模组添加了新物品或新方块，这里必须要填true！所有玩家必须都加载方块才能进入 
