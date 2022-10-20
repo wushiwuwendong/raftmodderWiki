@@ -9,7 +9,7 @@
       - [多人游戏中的模组](/tutorials/mods-in-multiplayer/README.md)
     - [如何运行多个 raft 实例](/tutorials/how-to-run-multiple-raft-instances/README.md)
 
-- 改装教程
+- 创建mod教程
     - [如何创建一个模组项目](/general/network/protocol-model.md)
      - [modinfo.json 文件](/general/network/protocol-model.md)
     - [如何创建 AssetBundle](/general/network/protocol-model.md)
