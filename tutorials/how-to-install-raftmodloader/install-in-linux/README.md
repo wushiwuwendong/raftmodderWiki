@@ -12,9 +12,9 @@
 ## 2.下载启动器 
 与您在 Windows 上所做的相同。进入[下载页面](https://raftmodder.mcxiaodong.top/download)，并将其放到某处（比如我放在 ~/Desktop/Raft- 我的 Raft 文件夹）。
 ![节点](./download.png) 
-##3. 安装 Mono 和 .NET 4.6 
-首先，如果你还没有安装 *winetricks*.  在 Ubuntu 上，它只是 *sudo apt install winetricks*. 下载 *Mono 5.0 .MSI* 并运行 *wine uninstaller*启动“添加和删除软件”对话框。  将其指向下载的安装程序并等待它完成。安装 Mono 后，您需要做另一件事：.NET 4.6。  它可以使用从终端安装 *winetricks dotnet46*. 它会警告您缺少 Windows 模块安装服务，但这不是问题。 
-##4.（推荐）安装DXVK以获得更好的性能 
+## 3. 安装 Mono 和 .NET 4.6 
+首先，如果你还没有安装 *winetricks*  在 Ubuntu 上，它只是 *sudo apt install winetricks* 下载 *Mono 5.0 .MSI* 并运行 *wine uninstaller*启动“添加和删除软件”对话框。  将其指向下载的安装程序并等待它完成。安装 Mono 后，您需要做另一件事：.NET 4.6。  它可以使用从终端安装 *winetricks dotnet46* 它会警告您缺少 Windows 模块安装服务，但这不是问题。 
+## 4.（推荐）安装DXVK以获得更好的性能 
 如果您的显卡支持 <code>Vulkan</code> 渲染，则不应跳过此步骤。从获取一个版本，将存档解压缩到 <code>~/Downloads/</code>并从终端中运行它 <code>~/Downloads/dxvk_x.y.zxyz </code>是版本的目录： 
 
     WINEPREFIX="$(dirname ~/.wine)/.wine" ./setup_dxvk.sh install
