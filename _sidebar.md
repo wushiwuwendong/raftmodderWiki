@@ -1,11 +1,11 @@
 - [欢迎来到Raftmodder](guid.md)
 - 教程
-    - [如何安装 RaftModLoader](./tutorials/how-to-install-raftmodloader/readme.md)
-     - [故障排除](./tutorials/how-to-install-raftmodloader/trouble/troubleshooting.md)
-     - [如何在 Linux 上安装 RaftModLoader](./tutorials/how-to-install-raftmodloader/install-in-linux/onlinux.MD)
-    - [如何配置您的防病毒软件](./tutorials/how-to-get-rid-of-virus-error/readme.md)
-    - [如何安装模组](./tutorials/how-to-install-a-mod/README.md)
-     - [替代模组安装方法](./tutorials/how-to-install-a-mod/alternative-mod-installation-methods.md)
+    - [如何安装 RaftModLoader](/tutorials/how-to-install-raftmodloader/readme.md)
+     - [故障排除](/tutorials/how-to-install-raftmodloader/trouble/troubleshooting.md)
+     - [如何在 Linux 上安装 RaftModLoader](/tutorials/how-to-install-raftmodloader/install-in-linux/onlinux.MD)
+    - [如何配置您的防病毒软件](/tutorials/how-to-get-rid-of-virus-error/readme.md)
+    - [如何安装模组](/tutorials/how-to-install-a-mod/README.md)
+     - [替代模组安装方法](/tutorials/how-to-install-a-mod/alternative-mod-installation-methods.md)
       - [多人游戏中的模组](/general/network/protocol-model.md)
     - [如何运行多个 raft 实例](/general/network/protocol-model.md)
 
