@@ -1,7 +1,7 @@
 - [欢迎来到Raftmodder](guid.md)
 - 教程
     - [如何安装 RaftModLoader](/general/algorithm/README.md)
-     - [故障排除](/general/algorithm/data-structures/stack/README.zh-CN.md)
+     - [故障排除](/tutorials/how-to-install-raftmodloader/troubleshooting)
      - [如何在 Linux 上安装 RaftModLoader](/general/algorithm/data-structures/queue/README.zh-CN.md)
     - [如何配置您的防病毒软件](/general/design-pattern/README.md)
     - [如何安装模组](/general/network/protocol-model.md)
