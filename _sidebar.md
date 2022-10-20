@@ -7,7 +7,7 @@
     - [如何安装模组](/tutorials/how-to-install-a-mod/README.md)
      - [替代模组安装方法](/tutorials/how-to-install-a-mod/alternative-mod-installation-methods.md)
       - [多人游戏中的模组](/tutorials/mods-in-multiplayer/README.md)
-    - [如何运行多个 raft 实例](/general/network/protocol-model.md)
+    - [如何运行多个 raft 实例](/tutorials/how-to-run-multiple-raft-instances/README.md)
 
 - 改装教程
     - [如何创建一个模组项目](/general/network/protocol-model.md)
