@@ -56,7 +56,7 @@ public IEnumerator Start()
 
  7) 加载一个资产包是好的，但是我们在卸载我们的模组时也需要卸载它。   所以，在你的 <code>OnModUnload</code>方法只需添加 <code>asset.Unload(true);</code>如下所示。 
     
-   ![pic](6.PNG)
+   ![pic](6.png)
   
  8) 现在，要从我们的资产包中加载一些东西，只需使用 <code>asset.LoadAsset\<T\>("assetname")</code>例如加载我之前添加到示例资产包中的 RedCube  ，我可以这样做 <code>asset.LoadAsset\<GameObject\>("RedCube")</code>如下所示。 
 如果你做的一切都正确，你的资产现在应该在游戏中。  例如我的红色立方体在主菜单中产生.😃 
