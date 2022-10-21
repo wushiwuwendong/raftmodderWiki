@@ -2,7 +2,7 @@
 ###### 当软件没有做它应该做的事情时...... 
 ---
 
-##### 如果安装 mod loader 没有按预期工作，请不要担心。   请查看以下文档，该文档描述了安装 mod loader 的一些更常见的问题。   如果这些都不起作用，请加入我们的 [开黑了](https://www.kookapp.cn/app/invite/mtR5bR) 中的[#获取帮助](https://www.kookapp.cn/app/channels/2357391926592835/7880396329959789) 频道寻求帮助或通过邮箱联系我。看到会回复。 
+##### 如果安装 mod loader 没有按预期工作，请不要担心。   请查看以下文档，该文档描述了安装 mod loader 的一些更常见的问题。   如果这些都不起作用，请在[#获取帮助](https://www.kookapp.cn/app/channels/2357391926592835/7880396329959789) 频道寻求帮助或通过邮箱联系我。看到会回复。 
 
 ---
 怎么了？ 
@@ -27,7 +27,9 @@
 ![节点](./settings.png)
 ### 3.改变启动方式 
 在设置中，有一个用于更改启动方法的选项。  你可以选择之间Steam,  Executable和 Force Start.  如果您以前从未更改过此值，则当前值应为 Steam.  请选择 Force Start. 
+
 ![节点](./starting-method.png)
+
  <center><font size=1>在设置菜单中，选择“启动方法”面板中的“强制启动”。 </font> </center>
 ### 4.开始游戏 
 现在，通过单击齿轮关闭设置 ⚙ 再次按下 Play开始游戏。 
@@ -42,6 +44,7 @@
 
 ---
 # 下载的文件已损坏
+
 ![节点](./corrupted.png)
 
 此问题与我们的 [启动器](https://raftmodder.mcxiaodong.top/download)尝试下载必要的文件但未能下载有关。   
@@ -62,4 +65,4 @@
 
 ---
 # 其他/本指南无法解决我的问题 
-看来你的问题有点不常见。你可以在[开黑了](https://www.kookapp.cn/app/invite/mtR5bR)#获取帮助 频道提出问题。
+看来你的问题有点不常见。你可以在[#获取帮助](https://www.kookapp.cn/app/channels/2357391926592835/7880396329959789) 频道提出问题。
