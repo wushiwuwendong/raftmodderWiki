@@ -9,7 +9,7 @@
 >您的方法不需要是公开的，但它需要是静态的
  
 如果您想在命令运行时获取命令的参数，您可以简单地添加一个名为的字符串 [] 参数 args如下所示。 
-```Csharp   
+```csharp   
 [ConsoleCommand(name: "useful", docs: "this command is useful.")]
 public static void MyCommand(string[] args)
 {
@@ -17,7 +17,7 @@ public static void MyCommand(string[] args)
 }
 ```
 该方法还可以具有字符串返回类型，并将显示返回值，如下所示。
-```Csharp
+```csharp
 [ConsoleCommand(name: "useful", docs: "this command is useful.")]
 public static string MyCommand(string[] args)
 {
@@ -25,7 +25,7 @@ public static string MyCommand(string[] args)
 }
 ```
 如上所述，命令需要是静态的，因此为了访问您的非静态变量，您可以使用 mod 实例，如下所示。 
-```Csharp
+```csharp
 public string myNonStaticVariable = "some stuff";
 public MyModType instance;
 

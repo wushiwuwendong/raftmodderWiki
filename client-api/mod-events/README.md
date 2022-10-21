@@ -4,7 +4,7 @@
 
 ### 如何使用它们？ 
   这很简单！   在您的 mod 类中只需覆盖它们，如下所示。 
-```Csharp
+```csharp
 public override void WorldEvent_WorldLoaded()
 {
     Debug.Log("The world is loaded!");

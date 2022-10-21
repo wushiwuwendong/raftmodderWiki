@@ -12,7 +12,7 @@
 Harmony 允许您通过创建补丁来做到这一点。  有几种有效的方法来设置你的补丁，但一种可靠的方法是使用属性。 
 
 每个补丁都将是它自己的类，如下所示： 
-```Csharp
+```csharp
 [HarmonyPatch(typeof(BlockCreator), "CanBuildBlock")]
 public class HarmonyPatch_IgnoreCollisionOnAlt
 {
@@ -34,7 +34,7 @@ method 属性让 Harmony 知道"何时"使用补丁中的代码。[HarmonyPrepar
 ## [HarmonyPrepare] 
 这使您可以在补丁发生之前检查一些事情，看看您是否甚至想要更改某些内容。 
 此方法期望您返回 false表示 Harmony 应该跳过这个补丁。 
-```Csharp
+```csharp
 [HarmonyPrepare]
 static bool IsBoxOpeningChanged()
 {
@@ -52,7 +52,7 @@ static bool IsBoxOpeningChanged()
 这段代码发生在原始方法发生之前，可以用来一起跳过它。 
 这意味着您可以通过使用 Prefix 来完全替换方法，然后通过返回跳过原始方法 false
 如果原始方法需要返回一些值，则修补方法可以接受 ref "Type" __result引用论证。  这将使它看起来像原始方法正在返回任何 __result被设定为 
-```Csharp
+```csharp
 [HarmonyPrefix]
 static bool AlwaysReturnTrue(ref bool __result)
 {
@@ -64,7 +64,7 @@ static bool AlwaysReturnTrue(ref bool __result)
 ```
 
 您也可以使用此方法存储可以在 Postfix 中访问的值，如果您有一个 via <code class="lang-csharp">__state</code>. 您可以使用 <code class="lang-csharp">ref</code>或者 <code>out</code>设置<code class="lang-csharp">__state</code>到您想要的任何值或类型。  如果您需要存储更多数据，那么您需要制作自己的对象以传递给 Postfix 
-```Csharp
+```csharp
 static void Prefix(out Stopwatch __state)
 {
     __state = new Stopwatch(); // 秒表是一个自定义计时器类
@@ -83,7 +83,7 @@ Postfix 的一个好处是它们始终运行。  无论原始方法从哪里逃�
 >[!NOTE]
 >Postfix 的一个怪癖是它们可以改变 __result通过 ref 或者可以返回一个以相同方式工作的值，但是如果它们返回一个结果，则它必须与方法中的第一个参数是相同的类型！ 
 
-```Csharp
+```csharp
 [HarmonyPostfix]
 static BuildError CheckForAlt(BuildError __result, BlockCreator __instance)
 {...}
@@ -98,7 +98,7 @@ static BuildError CheckForAlt(BuildError __result, BlockCreator __instance)
 TargetMethod 是另一个强大的工具，可让您重用代码并将更改应用于多个不同的方法。  它还可用于根据代码找到的内容有条件地应用更改。 
 TargetMethod 必须返回 MethodBase 类型，该类型指向您的补丁将应用于哪个方法。  或者，[HarmonyTargetMethods] 也可以用于将相同的补丁逻辑应用于多个方法，尽管在这种情况下它需要一些 MethodBases 的 IEnumerable 集合。 
 两种不同的方法是迭代，修补所有方法： 
-```Csharp
+```csharp
 [HarmonyTargetMethods]
 static IEnumerable<MethodBase> PatchInventoryMethods()
 {
@@ -108,7 +108,7 @@ static IEnumerable<MethodBase> PatchInventoryMethods()
 }
 ```
 或者，影响您收集的一组方法： 
-```Csharp
+```csharp
 [HarmonyTargetMethods]
 IEnumerable<MethodBase> PatchAllPlayerMethods()
 {
@@ -153,7 +153,7 @@ IEnumerable<MethodBase> PatchAllPlayerMethods()
 为此，请确保您的文件已经 <code class="lang-csharp">using HarmonyLib</code>;
 然后，您需要为您的补丁集创建一个带有 id 的新 Harmony 实例。  id 的常见结构是"com.company.project.product"或对我们来说是"com.User.Project.Feature" 
 然后我们告诉 Harmony 实例修补它可以在我们的代码中找到的所有内容。  在旧版本中，您需要告诉 Harmony 查找当前正在运行的游戏 <code class="lang-csharp">Assembly.GetExecutingAssembly()</code>尝试修补它，但这些天它会默认出现在那里。 
-```Csharp
+```csharp
  public void Start()
 {
     MyInput.Keybinds.Add("Alt", new Keybind("alt", KeyCode.LeftAlt, KeyCode.RightAlt));
@@ -165,7 +165,7 @@ IEnumerable<MethodBase> PatchAllPlayerMethods()
 } 
 ```
 请记住，您为加载 mod 所做的任何事情都需要在卸载时撤消，以防止出现奇怪的错误并保持客户端稳定。  这也意味着您需要告诉 Harmony 实例取消修补您更改的内容。
-```Csharp
+```csharp
 public void OnModUnload()
 {
     MyInput.Keybinds.Remove("Alt");
