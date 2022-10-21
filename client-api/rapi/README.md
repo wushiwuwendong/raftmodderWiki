@@ -6,17 +6,16 @@
 <!-- tabs:start -->
 
 #### **方法**
-
-    string GetUsernameFromSteamID(CSteamID steamid)
-
+```C#
+string GetUsernameFromSteamID(CSteamID steamid)
+```
 
 
 #### **例子**
 
-
-    string username = RAPI.GetUsernameFromSteamID(playersteamid);
-
-    RConsole.Log("The player name is " + username);
-
+```C#
+string username = RAPI.GetUsernameFromSteamID(playersteamid);
+RConsole.Log("The player name is " + username);
+```
 
 <!-- tabs:end -->
