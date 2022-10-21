@@ -14,7 +14,7 @@
      - [modinfo.json 文件](/modding-tutorials/the-modinfo.json-file/README.md)
     - [如何创建 AssetBundle](/modding-tutorials/how-to-create-an-assetbundle/README.md)
     - [如何创建控制台命令](/modding-tutorials/how-to-create-console-commands/README.md)
-    - [Harmony 基础](/modding-tutorials/harmony-basics/README.md))
+    - [Harmony 基础](/modding-tutorials/harmony-basics/README.md)
     - [访问修改存储库](/general/network/protocol-model.md)
 
 
