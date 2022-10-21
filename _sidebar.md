@@ -25,16 +25,16 @@
 
 - 客户端代码实例
     - [读取私有变量](/client-code-examples/untitled/README.md)
-    - [修改私有变量](/general/network/protocol-model.md)
-    - [添加私有变量](/general/network/protocol-model.md)
-    - [访问玩家实例](/general/network/protocol-model.md)
-    - [给玩家物品](/general/network/protocol-model.md)
-    - [掉落/生成物品](/general/network/protocol-model.md)
-    - [打印到控制台](/general/network/protocol-model.md)
-    - [在世界加载时执行代码](/general/network/protocol-model.md)
-    - [获取当前 SteamID](/general/network/protocol-model.md)
-    - [获取当前用户名](/general/network/protocol-model.md)
-    - [获取选定的快捷栏项目](/general/network/protocol-model.md)
+    - [修改私有变量](/client-code-examples/modifying-private-variables/README.md)
+    - [添加私有变量](/client-code-examples/adding-private-variables/README.md)
+    - [访问玩家实例](/client-code-examples/accessing-the-player-instance/README.md)
+    - [给玩家物品](/client-code-examples/giving-items-to-a-player/README.md)
+    - [掉落/生成物品](/client-code-examples/dropping-spawning-items/README.md)
+    - [打印到控制台](/client-code-examples/printing-to-the-console/README.md)
+    - [在世界加载时执行代码](/client-code-examples/execute-code-on-world-loading/README.md)
+    - [获取当前 SteamID](/client-code-examples/get-the-current-steamid/README.md)
+    - [获取当前用户名](/client-code-examples/get-the-current-username/README.md)
+    - [获取选定的快捷栏项目](/client-code-examples/get-selected-hotbar-item/README.md)
 
 
 - 网站
