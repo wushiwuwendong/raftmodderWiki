@@ -133,6 +133,7 @@ IEnumerable<MethodBase> PatchAllPlayerMethods()
 - 补丁参数必须使用与原始方法完全相同的名称和类型（对象也可以） 
 - 补丁既可以正常获取参数，也可以通过声明任何参数 ref（用于操作） 
 - 为了允许补丁重用，可以通过使用名为的参数注入原始方法<code class="lang-csharp">__originalMethod</code>
+
 >[!NOTE]
 >使用三个下划线 ___likeSo读取变量非常有用 
 
@@ -153,27 +154,27 @@ IEnumerable<MethodBase> PatchAllPlayerMethods()
 然后，您需要为您的补丁集创建一个带有 id 的新 Harmony 实例。  id 的常见结构是"com.company.project.product"或对我们来说是"com.User.Project.Feature" 
 然后我们告诉 Harmony 实例修补它可以在我们的代码中找到的所有内容。  在旧版本中，您需要告诉 Harmony 查找当前正在运行的游戏 <code class="lang-csharp">Assembly.GetExecutingAssembly()</code>尝试修补它，但这些天它会默认出现在那里。 
 ```Csharp
-   public void Start()
-  {
-      MyInput.Keybinds.Add("Alt", new Keybind("alt", KeyCode.LeftAlt, KeyCode.RightAlt));
+ public void Start()
+{
+    MyInput.Keybinds.Add("Alt", new Keybind("alt", KeyCode.LeftAlt, KeyCode.RightAlt));
 
-      harmonyInstance = new Harmony("com.Soggylithe.IgnoreBuildCollision");
-      harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
+    harmonyInstance = new Harmony("com.Soggylithe.IgnoreBuildCollision");
+    harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
 
-      Debug.Log("Place Anywhere successfully loaded! - Default-AltKey");
-  } 
+    Debug.Log("Place Anywhere successfully loaded! - Default-AltKey");
+} 
 ```
 请记住，您为加载 mod 所做的任何事情都需要在卸载时撤消，以防止出现奇怪的错误并保持客户端稳定。  这也意味着您需要告诉 Harmony 实例取消修补您更改的内容。
 ```Csharp
-  public void OnModUnload()
-  {
-      MyInput.Keybinds.Remove("Alt");
+public void OnModUnload()
+{
+    MyInput.Keybinds.Remove("Alt");
 
-      harmonyInstance.UnpatchAll(harmonyInstance.Id);
-      Destroy(gameObject);
-      Debug.Log("Mod Brine has been unloaded!");
-  }
-  ```
+    harmonyInstance.UnpatchAll(harmonyInstance.Id);
+    Destroy(gameObject);
+    Debug.Log("Mod Brine has been unloaded!");
+}
+```
 在旧版本，您需要在卸载时 <code class="lang-csharp">Destroy()</code>模组对象。 
 撰写者： Soggylithe 2020 年 10 月 31 日 
 
