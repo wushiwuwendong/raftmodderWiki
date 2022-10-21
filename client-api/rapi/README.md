@@ -21,7 +21,7 @@ RConsole.Log("The player name is " + username);
 <!-- tabs:end -->
 
 
-### 切换鼠标光标。 
+### 切换鼠标光标 
 
 <!-- tabs:start -->
 #### **方法**
@@ -37,7 +37,7 @@ RAPI.ToggleCursor(true); // 这将显示光标.
 RAPI.ToggleCursor(false); // 这将隐藏光标
 ```
 <!-- tabs:end -->
-### 注册一个新项目。 
+### 注册一个新项目 
 <!-- tabs:start -->
 #### **方法**
 ```csharp
@@ -54,12 +54,12 @@ Item_Base yournewitem = asset.LoadAsset<Item_Base>("yournewitem");
 RAPI.RegisterItem(yournewitem);
 ```
 <!-- tabs:end -->
-### 设置项目预制件。
+### 设置项目预制件
 <!-- tabs:start --> 
 #### **方法**
 ```csharp
 void SetItemObject(Item_Base item, GameObject prefab)
-// 默认手是右手。 RItemHand 可以是 leftHand 或 rightHand。
+// 默认手是右手 RItemHand 可以是 leftHand 或 rightHand
 void SetItemObject(Item_Base item, GameObject prefab, RItemHand parent)
 ```
 
@@ -87,7 +87,7 @@ Network_Player GetLocalPlayer()
 
 ```csharp
 Network_Player player = RAPI.GetLocalPlayer();
-// player 变量将包含本地播放器脚本。
+// player 变量将包含本地播放器脚本
 ```
 <!-- tabs:end -->
 ### 给本地玩家一件物品
@@ -102,7 +102,7 @@ void GiveItem(Item_Base item, int amount)
 
 ```csharp
 RAPI.GiveItem(ItemManager.GetItemByName("raw_potato"),10);
-//这将为本地玩家提供 10 个生土豆。
+//这将为本地玩家提供 10 个生土豆
 ```
 <!-- tabs:end -->
 ### 广播聊天消息
@@ -132,7 +132,7 @@ void AddItemToBlockQuadType(Item_Base item, RBlockQuadType quadtype)
 
 ```csharp
 RAPI.AddItemToBlockQuadType(YourNewItem, RBlockQuadType.quad_foundation);
-// 允许将"YourNewItem"放置在地基上。
+// 允许将"YourNewItem"放置在地基上
 ```
 <!-- tabs:end -->
 ### 不允许在网格系统上放置块
@@ -147,7 +147,7 @@ void RemoveItemFromBlockQuadType(string itemUniqueName, RBlockQuadType quadtype)
 
 ```csharp
 RAPI.RemoveItemFromBlockQuadType("YourItemUniqueName", RBlockQuadType.quad_foundation);
-// 不允许将具有唯一名称"YourItemUniqueName"的项目放置在地基上。
+// 不允许将具有唯一名称"YourItemUniqueName"的项目放置在地基上
 
 ```
 <!-- tabs:end -->
@@ -162,17 +162,17 @@ NetworkMessage ListenForNetworkMessagesOnChannel(int channel = 0)
 #### **例子**
 
 ```csharp
-// Choose a unique ID for the channel id to not interfer with other mods.
+// 为频道 ID 选择唯一 ID，以免干扰其他模组.
 NetworkMessage netMessage = RAPI.ListenForNetworkMessagesOnChannel(30);
 if (netMessage != null)
 {
   CSteamID id = netMessage.steamid;
   Message message = netMessage.message;
    // 这里我们使用 5000 因为我们不能修改枚举，你可以使用任何值
-   // 只要它不在 Messages 枚举中。 大于 1000 是完美的。
+   // 只要它不在 Messages 枚举中 大于 1000 是完美的
   if(message.Type == (Messages)5000){
    // 用你知道的消息做你的事情
-   // 它是你的和它想要的类型。
+   // 它是你的和它想要的类型
     YourMessageClass msg = message as YourMessageClass;
   }
 }
