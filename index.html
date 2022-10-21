@@ -52,7 +52,40 @@
     theme      : 'classic', // default
     tabComments: true,      // default
     tabHeadings: true       // default
-  }
+  },
+  search: 'auto', // 默认值
+
+    search : [
+      '/',            // => /README.md
+      '/guide',       // => /guide.md
+      '/get-started', // => /get-started.md
+      '/zh-cn/',      // => /zh-cn/README.md
+    ],
+
+    // 完整配置参数
+    search: {
+      maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      paths: [], // or 'auto'
+      placeholder: 'Type to search',
+
+      // 支持本地化
+      placeholder: {
+        '/en_US/': 'Type to search',
+        '/': '搜索'
+      },
+
+      noData: 'No Results!',
+
+      // 支持本地化
+      noData: {
+        '/en_US/': 'No Results',
+        '/': '找不到结果'
+      },
+
+      // 搜索标题的最大层级, 1 - 6
+      depth: 4,
+
+    }
     }
   </script>
 
