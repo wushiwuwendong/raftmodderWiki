@@ -20,7 +20,7 @@
 
 - 客户端api
     - [RAPI](/client-api/rapi/README.md)
-    - [模组事件](/general/network/protocol-model.md)
+    - [模组事件](/client-api/mod-events/README.md)
 
 
 - 客户端代码实例
