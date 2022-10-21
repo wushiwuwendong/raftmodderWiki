@@ -26,12 +26,29 @@
    ![pic](4.PNG)
    
  6) 现在让我们使用我们之前在[如何创建模组项目 ](../how-to-create-a-mod-project/README.md)教程中制作的模组将其加载到游戏中。打开您的 mod 项目并更改您的启动方法类型 <code>void</code>至 <code>IEnumerator</code>并将下面的代码复制到 start 方法中，如下所示；您还需要在您的模组中创建一个新变量，以便能够从模组中的任何位置访问资产包。 
-如果 IEnumerator用红色下划线，只需添加 <code>using System.Collections;</code>在你的 mod 文件的顶部。 
-7) 加载一个资产包是好的，但是我们在卸载我们的模组时也需要卸载它。   所以，在你的 <code>OnModUnload</code>方法只需添加 <code>asset.Unload(true);</code>如下所示。 
+<!-- tabs:start -->
+#### **帮助图片**
+![pic](5.PNG)
+#### **代码**
+````csharp
+AssetBundle asset;
+
+public IEnumerator Start()
+{
+    AssetBundleCreateRequest request = AssetBundle.LoadFromMemoryAsync(GetEmbeddedFileBytes("tutorial.assets"));
+    yield return request;
+    asset = request.assetBundle;
+    
+}
+````
+>[!NOTE]
+>如果 IEnumerator用红色下划线，只需添加 <code>using System.Collections;</code>在你的 mod 文件的顶部。 
+<!-- tabs:end -->
+ 7) 加载一个资产包是好的，但是我们在卸载我们的模组时也需要卸载它。   所以，在你的 <code>OnModUnload</code>方法只需添加 <code>asset.Unload(true);</code>如下所示。 
     
    ![pic](6.PNG)
   
-8) 现在，要从我们的资产包中加载一些东西，只需使用 <code>asset.LoadAsset\<T\>("assetname")</code>例如加载我之前添加到示例资产包中的 RedCube  ，我可以这样做 <code>asset.LoadAsset\<GameObject\>("RedCube")</code>如下所示。 
+ 8) 现在，要从我们的资产包中加载一些东西，只需使用 <code>asset.LoadAsset\<T\>("assetname")</code>例如加载我之前添加到示例资产包中的 RedCube  ，我可以这样做 <code>asset.LoadAsset\<GameObject\>("RedCube")</code>如下所示。 
 如果你做的一切都正确，你的资产现在应该在游戏中。  例如我的红色立方体在主菜单中产生.😃 
      
    ![pic](7.PNG)
