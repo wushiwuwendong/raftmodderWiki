@@ -23,7 +23,7 @@
 
 
 
-### con & Banner Fields 字段：  
+### icon & Banner Fields 字段：  
 ##### 只需将图像添加到您的解决方案文件夹中  .cs 文件和  .csproj 文件是并编辑  modinfo.json 文件如下图。 
 ![pic](./image.png)
 ### UpdateUrl 字段： 
