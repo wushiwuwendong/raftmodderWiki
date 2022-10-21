@@ -38,7 +38,7 @@
 
 
 - 网站
-    - [Slugs](/general/network/protocol-model.md)
+    - [Slugs](/website/slugs/README.md)
 
 
 - 服务器 - api
