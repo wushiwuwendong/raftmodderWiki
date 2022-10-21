@@ -30,7 +30,8 @@
 <!-- tabs:start -->
 
 #### **帮助图片**
-![pic](5.PNG)
+
+![pic](5.png)
 
 >[!NOTE]
 >如果 IEnumerator用红色下划线，只需添加 <code>using System.Collections;</code>在你的 mod 文件的顶部。 
