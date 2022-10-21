@@ -24,7 +24,7 @@
 
 
 - 客户端代码实例
-    - [读取私有变量](/general/network/protocol-model.md)
+    - [读取私有变量](/client-code-examples/untitled/README.md)
     - [修改私有变量](/general/network/protocol-model.md)
     - [添加私有变量](/general/network/protocol-model.md)
     - [访问玩家实例](/general/network/protocol-model.md)
