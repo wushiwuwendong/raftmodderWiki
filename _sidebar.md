@@ -1,5 +1,5 @@
 - [欢迎来到Raftmodder](guid.md)
-- 教程
+- **教程**
     - [如何安装 RaftModLoader](/tutorials/how-to-install-raftmodloader/readme.md)
      - [故障排除](/tutorials/how-to-install-raftmodloader/trouble/troubleshooting.md)
      - [如何在 Linux 上安装 RaftModLoader](tutorials/how-to-install-raftmodloader/install-in-linux/README.md)
@@ -9,7 +9,7 @@
       - [多人游戏中的模组](/tutorials/mods-in-multiplayer/README.md)
     - [如何运行多个 raft 实例](/tutorials/how-to-run-multiple-raft-instances/README.md)
 
-- 创建mod教程
+- **创建mod教程**
     - [如何创建一个模组项目](/modding-tutorials/how-to-create-a-mod-project/README.md)
      - [modinfo.json 文件](/modding-tutorials/the-modinfo.json-file/README.md)
     - [如何创建 AssetBundle](/modding-tutorials/how-to-create-an-assetbundle/README.md)
@@ -18,12 +18,12 @@
     - [访问修改存储库](/general/network/protocol-model.md)
 
 
-- 客户端api
+- **客户端api**
     - [RAPI](/client-api/rapi/README.md)
     - [模组事件](/client-api/mod-events/README.md)
 
 
-- 客户端代码实例
+- **客户端代码实例**
     - [读取私有变量](/client-code-examples/untitled/README.md)
     - [修改私有变量](/client-code-examples/modifying-private-variables/README.md)
     - [添加私有变量](/client-code-examples/adding-private-variables/README.md)
@@ -37,7 +37,7 @@
     - [获取选定的快捷栏项目](/client-code-examples/get-selected-hotbar-item/README.md)
 
 
-- 网站
+- **网站**
     - [Slugs](/website/slugs/README.md)
 
 
